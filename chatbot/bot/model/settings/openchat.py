@@ -1,7 +1,7 @@
-from bot.model.model import Model
+from bot.model.modelsetting import ModelSetting
 
 
-class OpenChat35Settings(Model):
+class OpenChat35Settings(ModelSetting):
     url = "https://huggingface.co/TheBloke/openchat-3.5-0106-GGUF/resolve/main/openchat-3.5-0106.Q4_K_M.gguf"
     file_name = "openchat-3.5-0106.Q4_K_M.gguf"
     config = {
@@ -12,7 +12,7 @@ class OpenChat35Settings(Model):
     config_answer = {"temperature": 0.7, "stop": []}
 
 
-class OpenChat36Settings(Model):
+class OpenChat36Settings(ModelSetting):
     url = "https://huggingface.co/bartowski/openchat-3.6-8b-20240522-GGUF/resolve/main/openchat-3.6-8b-20240522-Q4_K_M.gguf"
     file_name = "openchat-3.6-8b-20240522-Q4_K_M.gguf"
     config = {
